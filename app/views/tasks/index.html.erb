@@ -1,0 +1,18 @@
+<h1>My Tasks</h1>
+
+
+<ol>
+  <% @tasks.each do |task| %>
+    <li>
+      <%= task[:title] %>
+      <%= task[:completed] %>
+      <%= link_to task[:title], task_path(task) %>
+    </li>
+  <% end %>
+</ol>
+
+<!-- execute ruby but don't display anything -->
+<%#  %>
+
+<!-- execute ruby and display result -->
+<%#=  %>
